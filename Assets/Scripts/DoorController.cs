@@ -8,8 +8,10 @@ public class DoorController : MonoBehaviour
     public GameObject instructions;
     private void OnTriggerStay(Collider other)
     {
+        Debug.Log("Triggered ");
         if (other.tag == "Door")
         {
+        Debug.Log("Door ");
             instructions.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -22,7 +24,7 @@ public class DoorController : MonoBehaviour
     {
         if (other.tag == "Door")
         {
-            instructions.SetActive(false);
-        }
+           instructions.SetActive(false);
+       }
     }
 }
