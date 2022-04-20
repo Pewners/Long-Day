@@ -6,24 +6,47 @@ using UnityEngine.SceneManagement;
 public class DoorSlideController : MonoBehaviour
 {
     public GameObject instructions;
-    private void OnTriggerStay(Collider other)
+    Animator anim;
+    bool inTrigger = false;
+    bool doorOpen = false;
+
+    void Start()
     {
-        if (other.tag == "Door3")
+        anim = GetComponent<Animator>();
+    }
+
+    void Update() {
+        if (inTrigger == true) 
         {
-            instructions.SetActive(true);
+            Debug.Log("in trigger");
+
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Animator anim = other.GetComponentInChildren<Animator>();
-                anim.SetTrigger("SlideOpenClose");
+                Debug.Log("e pressed");
+
+                doorOpen = !doorOpen;
             }
+
+        }
+
+        anim.SetBool("Open", doorOpen);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            instructions.SetActive(true);
+            inTrigger = true;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Door3")
+        if (other.tag == "Player")
         {
             instructions.SetActive(false);
+            inTrigger = false;
         }
     }
 }
