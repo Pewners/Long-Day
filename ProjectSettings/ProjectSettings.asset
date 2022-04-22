@@ -99,7 +99,7 @@ PlayerSettings:
   xboxEnableFitness: 0
   visibleInBackground: 1
   allowFullscreenSwitch: 1
-  fullscreenMode: 1
+  fullscreenMode: 3
   xboxSpeechDB: 0
   xboxEnableHeadOrientation: 0
   xboxEnableGuest: 0
@@ -270,7 +270,7 @@ PlayerSettings:
   - m_BuildTarget: Standalone
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 34c2d01777c842e44ae49cb5a3f813fd, type: 3}
+      m_Icon: {fileID: 2800000, guid: 7cd201c02b23f8e42be820a82ac76cd0, type: 3}
       m_Width: 1024
       m_Height: 1024
       m_Kind: 0
@@ -308,6 +308,13 @@ PlayerSettings:
       m_Icon: {fileID: 0}
       m_Width: 16
       m_Height: 16
+      m_Kind: 0
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 7cd201c02b23f8e42be820a82ac76cd0, type: 3}
+      m_Width: 128
+      m_Height: 128
       m_Kind: 0
   m_BuildTargetPlatformIcons: []
   m_BuildTargetBatching:
