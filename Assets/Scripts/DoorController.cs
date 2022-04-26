@@ -5,24 +5,69 @@ using UnityEngine.SceneManagement;
 
 public class DoorController : MonoBehaviour
 {
+    //    public GameObject instructions;
+    //    private void OnTriggerStay(Collider other)
+    //    {
+    //        if (other.tag == "Door")
+    //        {
+    //            instructions.SetActive(true);
+    //            if (Input.GetKeyDown(KeyCode.E))
+    //            {
+    //                SceneManager.LoadScene(3);
+    //            }
+    //        }
+    //    }
+
+    //    private void OnTriggerExit(Collider other)
+    //    {
+    //        if (other.tag == "Door")
+    //        {
+    //            instructions.SetActive(false);
+    //        }
+    //    }
     public GameObject instructions;
-    private void OnTriggerStay(Collider other)
+    //Animator anim;
+    bool inTrigger = false;
+    bool doorOpen = false;
+
+    void Start()
     {
-        if (other.tag == "Door")
+        //anim = GetComponent<Animator>();
+    }
+
+    void Update()
+    {
+        if (inTrigger == true)
         {
-            instructions.SetActive(true);
+            Debug.Log("in trigger");
+
             if (Input.GetKeyDown(KeyCode.E))
             {
-                SceneManager.LoadScene(3);
+                Debug.Log("e pressed");
+
+                doorOpen = !doorOpen;
             }
+
+        }
+
+        //anim.SetBool("Open", doorOpen);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            instructions.SetActive(true);
+            inTrigger = true;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Door")
+        if (other.tag == "Player")
         {
             instructions.SetActive(false);
+            inTrigger = false;
         }
     }
 }
