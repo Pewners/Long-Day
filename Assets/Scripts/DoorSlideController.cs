@@ -18,7 +18,7 @@ public class DoorSlideController : MonoBehaviour
     void Update() {
         if (inTrigger == true) 
         {
-            Debug.Log("in trigger");
+            //Debug.Log("in trigger");
 
             if (Input.GetKeyDown(KeyCode.E))
             {

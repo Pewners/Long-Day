@@ -39,11 +39,12 @@ public class DoorController : MonoBehaviour
     {
         if (inTrigger == true)
         {
-            Debug.Log("in trigger");
+            //Debug.Log("in trigger");
 
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("e pressed");
+                SceneManager.LoadScene(3);
 
                 doorOpen = !doorOpen;
             }
