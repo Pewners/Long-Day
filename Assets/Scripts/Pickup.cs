@@ -5,6 +5,11 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class Pickup : MonoBehaviour
 {
+    private void Start()
+    {
+        speed = GameObject.Find ("CharacterController").GetComponent<normalSpeed>();
+    }
+
     public int type = 0;
 
     private void OnTriggerEnter(Collider other)
@@ -19,6 +24,8 @@ public class Pickup : MonoBehaviour
                 PostProcessVolume grain = GameObject.Find("GrainPP").GetComponent<PostProcessVolume>();
 
                 grain.enabled = true;
+
+
             }
         }
 
