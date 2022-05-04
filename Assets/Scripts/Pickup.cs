@@ -5,9 +5,11 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class Pickup : MonoBehaviour
 {
+    public gameObject speed;
+
     private void Start()
     {
-        speed = GameObject.Find ("CharacterController").GetComponent<normalSpeed>();
+    //    speed = GameObject.Find ("CharacterController").GetComponent<normalSpeed>();
     }
 
     public int type = 0;
@@ -37,4 +39,8 @@ public class Pickup : MonoBehaviour
     {
         
     }
+}
+
+public class gameObject
+{
 }

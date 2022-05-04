@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -348,7 +348,7 @@ Transform:
   m_GameObject: {fileID: 323311879}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 596.98315, y: 234.1167, z: -12.841644}
-  m_LocalScale: {x: 7.5088, y: 7.5088, z: 7.5088}
+  m_LocalScale: {x: 37.140274, y: 20.23001, z: 20.23001}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -377,7 +377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019757335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 601.259, y: 234.31, z: -30.662865}
+  m_LocalPosition: {x: 601.259, y: 234.57, z: -30.662865}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -791,6 +791,10 @@ PrefabInstance:
     - target: {fileID: 4596429880873633662, guid: e53377a412c7f25408bc17c3ad5300ce, type: 3}
       propertyPath: m_Name
       value: Raboot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596429880873633662, guid: e53377a412c7f25408bc17c3ad5300ce, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e53377a412c7f25408bc17c3ad5300ce, type: 3}
