@@ -31,7 +31,7 @@ public class Dialogue : MonoBehaviour
 
             if (textComponent.text == lines[index])
             {
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(2);
             }
 
             else
