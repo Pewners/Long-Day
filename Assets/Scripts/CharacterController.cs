@@ -75,12 +75,13 @@ public class CharacterController : MonoBehaviour
         cam.transform.localRotation = Quaternion.Euler(new Vector3(-camRotation, 0.0f, 0.0f));
     }
 
-    void OnCollisionEnter(Collision obj)
+    void OnTriggerEnter(Collider obj)
     {
         if (obj.gameObject.CompareTag("Drug"))
         {
             normalSpeed = normalSpeed + 7f;
             maxSpeed = maxSpeed + 7f;
+            Debug.Log("Speed");
         }
     }
 }
