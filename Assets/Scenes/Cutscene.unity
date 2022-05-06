@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -745,7 +745,7 @@ MonoBehaviour:
   lines:
   - Here, take these.
   - Trust me dude, it'll make you feel a ton better!
-  - Bro, remember how I felt like crap the other day? After you gave me the nuggets,
+  - Bro, remember how I felt like crap the other day? After you gave me the nuggies,
     I started feeling great!
   - You looked like a total loser before, good thing these sorted you out.
   - This could be you! Just think about how much better you'll feel.
