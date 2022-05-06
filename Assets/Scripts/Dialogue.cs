@@ -29,15 +29,16 @@ public class Dialogue : MonoBehaviour
                 NextLine();
             }
 
-            if (textComponent.text == lines[index])
-            {
-                SceneManager.LoadScene(2);
-            }
+            //if (textComponent.text == lines[index])
+            //{
+            //    SceneManager.LoadScene(2);
+            //}
 
             else
             {
                 StopAllCoroutines();
                 textComponent.text = lines[index];
+            //    SceneManager.LoadScene(2);
                 
             }
         }
@@ -69,6 +70,7 @@ public class Dialogue : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
+            SceneManager.LoadScene(2);
         }
     }
 }
