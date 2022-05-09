@@ -7571,13 +7571,28 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1956262986886155781}
+  - component: {fileID: 1183842516033098944}
   m_Layer: 0
   m_Name: T-Shirt
-  m_TagString: Untagged
+  m_TagString: Shirts
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &1183842516033098944
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183842516033098943}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1185864167762881277 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7283697437102589730, guid: e95739cb6bf63bf4aa08b994001a0771, type: 3}
@@ -15638,9 +15653,10 @@ GameObject:
   - component: {fileID: 974569182819118833}
   - component: {fileID: 7253905281950196179}
   - component: {fileID: 7731547519525547008}
+  - component: {fileID: 7731547519525547009}
   m_Layer: 0
   m_Name: BaseMesh_Man_Simple_Body1
-  m_TagString: Untagged
+  m_TagString: Shirts
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15663,6 +15679,20 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!64 &7731547519525547009
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7731547519525547007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5656662681491522105, guid: 6b17cbb4bfb73c6419629552b4c94f5b, type: 3}
 --- !u!4 &7770266955765854194
 Transform:
   m_ObjectHideFlags: 0
