@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShirtPickup : MonoBehaviour
 {
-    public int score;
+    public int score = 0;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -13,6 +13,7 @@ public class ShirtPickup : MonoBehaviour
         {
             Destroy(gameObject);
             score++;
+            Debug.Log(score);
         }
     }
 
@@ -20,7 +21,7 @@ public class ShirtPickup : MonoBehaviour
     {
         if (score > 3)
         {
-
+            //play voice clip
         }
     }
 }
