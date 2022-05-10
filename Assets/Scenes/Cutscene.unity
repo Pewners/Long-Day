@@ -744,12 +744,16 @@ MonoBehaviour:
   textComponent: {fileID: 1081165522}
   lines:
   - Here, take these.
-  - Trust me dude, it'll make you feel a ton better!
-  - Bro, remember how I felt like crap the other day? After you gave me the nuggies,
+  - Trust me dude, it'll make you feel amazing!
+  - Bro, remember how I felt like crap the other day? After you gave me those drugs,
     I started feeling great!
-  - You looked like a total loser before, good thing these sorted you out.
+  - You looked like a total loser before, good thing these drugs sorted you out.
   - This could be you! Just think about how much better you'll feel.
-  - I mean, everyone's doing it, so why don't you?
+  - I mean, everyone's doing it, why don't you?
+  - Besides, the boss has been on your case for slacking recently
+  - You're practically dumb if you don't take the offer at this point
+  - Yea, I mean, you don't wanna lose your job. Do you?
+  - I knew you were a loser anyways...
   textSpeed: 0
 --- !u!1 &1701497283
 GameObject:
