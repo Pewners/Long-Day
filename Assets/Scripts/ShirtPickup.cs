@@ -4,28 +4,12 @@ using UnityEngine;
 
 public class ShirtPickup : MonoBehaviour
 {
-    int shirts = 0;
-    
-    void Start() 
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-    
-    //private void OnTriggerEnter(Collider obj)
-    //{
-    //    if (obj.gameObject.CompareTag("Shirts"))
-    //    {
-    //        shirts++;
-    //        Destroy(gameObject);
-    //    }
-    //}
-
-    private void OnTriggerEnter(Collider target)
-    {
-        if(target.tag == "Shirts")
+        //insert code that adds to counter
+        if (other.tag == "Player")
         {
             Destroy(gameObject);
         }
-
     }
 }
