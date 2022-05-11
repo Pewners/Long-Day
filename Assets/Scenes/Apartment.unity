@@ -7272,7 +7272,7 @@ GameObject:
   - component: {fileID: 1804385636}
   - component: {fileID: 1804385635}
   m_Layer: 5
-  m_Name: Consider
+  m_Name: Damn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7317,7 +7317,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Maybe I should consider what they said yesterday...
+  m_text: Damn my room's a mess... Guess I gotta clean up.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
