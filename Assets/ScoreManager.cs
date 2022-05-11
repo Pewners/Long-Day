@@ -18,9 +18,8 @@ public class ScoreManager : MonoBehaviour
     void Start()
     {
         text.SetActive(false);
-        text2.SetActive(false);
-
-        
+        //text2.SetActive(false);
+        StartCoroutine(StartText());
     }
 
     // Update is called once per frame
@@ -39,5 +38,12 @@ public class ScoreManager : MonoBehaviour
         text.SetActive(true);
         yield return new WaitForSeconds(3f);
         text.SetActive(false);
+    }
+
+    IEnumerator StartText()
+    {
+        text2.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        text2.SetActive(false);
     }
 }
