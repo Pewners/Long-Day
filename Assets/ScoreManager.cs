@@ -11,6 +11,9 @@ public class ScoreManager : MonoBehaviour
 
     public GameObject text2;
 
+    public GameObject text3;
+    bool textShown2 = false;
+
     public GameObject drug;
 
 
@@ -31,6 +34,11 @@ public class ScoreManager : MonoBehaviour
             StartCoroutine(ShowText());
             _ = Instantiate(drug, new Vector3((float)-10.01, 1, (float)-36.75), Quaternion.identity);
         }
+
+        if ((score > 10) && (textShown2 == false))
+        {
+            StartCoroutine(WorkText());
+        }
     }
 
     IEnumerator ShowText() {
@@ -45,5 +53,13 @@ public class ScoreManager : MonoBehaviour
         text2.SetActive(true);
         yield return new WaitForSeconds(3f);
         text2.SetActive(false);
+    }
+
+    IEnumerator WorkText()
+    {
+        textShown2 = true;
+        text3.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        text3.SetActive(false);
     }
 }
