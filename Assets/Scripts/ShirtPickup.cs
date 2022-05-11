@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class ShirtPickup : MonoBehaviour
 {
-    public static int score = 0;
-
+    public ScoreManager scoreManager;
     public Text test;
 
     private void OnTriggerEnter(Collider other)
@@ -14,23 +13,21 @@ public class ShirtPickup : MonoBehaviour
         //insert code that adds to counter
         if (other.tag == "Player")
         {
+            
+            scoreManager.score += 1;
+            Debug.Log(scoreManager.score);
             Destroy(gameObject);
-            score += 1;
-            Debug.Log(score);
         }
     }
 
     void Start()
     {
         //Text.SetActive(false);
+        scoreManager = FindObjectOfType<ScoreManager>();
     }
 
     private void Update()
     {
-        if (score > 3)
-        {
-            //play voice clip
-            
-        }
+        
     }
 }
