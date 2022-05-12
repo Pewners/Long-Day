@@ -35,7 +35,7 @@ public class ScoreManager : MonoBehaviour
             _ = Instantiate(drug, new Vector3((float)-10.01, 1, (float)-36.75), Quaternion.identity);
         }
 
-        if ((score > 10) && (textShown2 == false))
+        if ((score > 6) && (textShown2 == false))
         {
             StartCoroutine(WorkText());
         }
