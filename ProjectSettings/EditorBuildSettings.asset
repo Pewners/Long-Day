@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Apartment.unity
     guid: 2170cca7513a8824a9734e74b6faffc0
   - enabled: 1
+    path: Assets/Scenes/AfterWork.unity
+    guid: 9fabd12727e16844980d2cb220e556d7
+  - enabled: 1
     path: Assets/Scenes/Work.unity
     guid: 28eaafa624c35a446a9015dad2232384
   - enabled: 1
