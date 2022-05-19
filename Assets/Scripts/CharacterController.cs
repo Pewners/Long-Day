@@ -75,10 +75,10 @@ public class CharacterController : MonoBehaviour
         camRotation = camRotation + Input.GetAxis("Mouse Y") * camRotationSpeed;
         cam.transform.localRotation = Quaternion.Euler(new Vector3(-camRotation, 0.0f, 0.0f));
 
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            SceneManager.LoadScene(5);
-        }
+        //if (Input.GetKey(KeyCode.Escape))
+        //{
+        //    SceneManager.LoadScene(5);
+        //}
     }
 
     void OnTriggerEnter(Collider obj)

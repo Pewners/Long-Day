@@ -44,7 +44,7 @@ public class DoorController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("e pressed");
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene("Work");
 
                 doorOpen = !doorOpen;
             }
