@@ -29,6 +29,17 @@ public class Pickup : MonoBehaviour
 
 
             }
+
+            if (type == 1)
+            {
+                PostProcessVolume lol = GameObject.Find("Volume").GetComponent<PostProcessVolume>();
+
+                lol.enabled = true;
+
+                PostProcessVolume ye = GameObject.Find("yea").GetComponent<PostProcessVolume>();
+
+                ye.enabled = false;
+            }
         }
 
 
