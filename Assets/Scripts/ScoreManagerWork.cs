@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScoreManager : MonoBehaviour
+public class ScoreManagerWork : MonoBehaviour
 {
     public int score = 0;
 
@@ -50,6 +50,7 @@ public class ScoreManager : MonoBehaviour
 
     IEnumerator StartText()
     {
+        yield return new WaitForSeconds(3f);
         text2.SetActive(true);
         yield return new WaitForSeconds(5f);
         text2.SetActive(false);
