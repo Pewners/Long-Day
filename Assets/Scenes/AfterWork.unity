@@ -6019,6 +6019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AfterWorkEffects
       objectReference: {fileID: 0}
+    - target: {fileID: 6239527897884002406, guid: cc94852414821ad499ea4dbe5a8c7168, type: 3}
+      propertyPath: isGlobal
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6239527897884002407, guid: cc94852414821ad499ea4dbe5a8c7168, type: 3}
       propertyPath: m_RootOrder
       value: 2

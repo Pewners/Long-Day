@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PaperPickup : MonoBehaviour
 {
-    public ScoreManager scoreManager;
+    public ScoreManagerWork scoreManagerWork;
     public Text test;
 
     private void OnTriggerEnter(Collider other)
@@ -14,8 +14,8 @@ public class PaperPickup : MonoBehaviour
         if (other.tag == "Player")
         {
             
-            scoreManager.score += 1;
-            Debug.Log(scoreManager.score);
+            scoreManagerWork.score += 1;
+            Debug.Log(scoreManagerWork.score);
             Destroy(gameObject);
         }
     }
@@ -23,7 +23,7 @@ public class PaperPickup : MonoBehaviour
     void Start()
     {
         //Text.SetActive(false);
-        scoreManager = FindObjectOfType<ScoreManager>();
+        scoreManagerWork = FindObjectOfType<ScoreManagerWork>();
     }
 
     private void Update()
