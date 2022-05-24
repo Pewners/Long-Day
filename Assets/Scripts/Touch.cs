@@ -7,7 +7,7 @@ public class Touch : MonoBehaviour
 {
     public GameObject box;
     public GameObject text;
-    bool textShown = false;
+    //bool textShown = false;
 
     private void Start()
     {
@@ -26,7 +26,7 @@ public class Touch : MonoBehaviour
 
     IEnumerator Home()
     {
-        textShown = true;
+        //textShown = true;
         text.SetActive(true);
         yield return new WaitForSeconds(2f);
         Debug.Log("Wait finished");

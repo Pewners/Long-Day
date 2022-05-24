@@ -5,14 +5,14 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class Pickup : MonoBehaviour
 {
-    public gameObject speed;
-    public gameObject home;
+    public GameObject speed;
+    public Collider home;
 
-    bool pickedup = false;
+    //bool pickedup = false;
 
     private void Start()
     {
-    //    speed = GameObject.Find ("CharacterController").GetComponent<normalSpeed>();
+        home.enabled = false;    
     }
 
     public int type = 0;
@@ -43,8 +43,8 @@ public class Pickup : MonoBehaviour
 
                 ye.enabled = false;
 
-                pickedup = true;
-                //_ = Instantiate(home, new Vector3((float)-10.01, 1, (float)-36.75), Quaternion.identity);
+                //pickedup = true;
+                home.enabled = true;
             }
         }
 

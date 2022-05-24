@@ -653,6 +653,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6386628511054008845, guid: f7c8cbc16495185459341cd8f6fcc63d, type: 3}
+      propertyPath: home
+      value: 
+      objectReference: {fileID: 322335452}
+    - target: {fileID: 6386628511054008845, guid: f7c8cbc16495185459341cd8f6fcc63d, type: 3}
       propertyPath: type
       value: 1
       objectReference: {fileID: 0}
@@ -1217,7 +1221,7 @@ GameObject:
   - component: {fileID: 322335453}
   - component: {fileID: 322335452}
   - component: {fileID: 322335451}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ReturnHome
   m_TagString: Untagged
   m_Icon: {fileID: 0}
