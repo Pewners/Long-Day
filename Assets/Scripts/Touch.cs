@@ -21,6 +21,7 @@ public class Touch : MonoBehaviour
             Debug.Log("Touch");
             Destroy(gameObject);
             StartCoroutine(Home());
+            SceneManager.LoadScene(4);
         }
     }
 
@@ -29,6 +30,5 @@ public class Touch : MonoBehaviour
         textShown = true;
         text.SetActive(true);
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(4);
     }
 }
