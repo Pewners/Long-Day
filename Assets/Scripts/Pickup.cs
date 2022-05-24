@@ -6,6 +6,9 @@ using UnityEngine.Rendering.PostProcessing;
 public class Pickup : MonoBehaviour
 {
     public gameObject speed;
+    public gameObject home;
+
+    bool pickedup = false;
 
     private void Start()
     {
@@ -39,6 +42,9 @@ public class Pickup : MonoBehaviour
                 PostProcessVolume ye = GameObject.Find("yea").GetComponent<PostProcessVolume>();
 
                 ye.enabled = false;
+
+                pickedup = true;
+                //_ = Instantiate(home, new Vector3((float)-10.01, 1, (float)-36.75), Quaternion.identity);
             }
         }
 
@@ -48,7 +54,10 @@ public class Pickup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //if (pickedup == true)
+        //{
+            
+        //}
     }
 }
 

@@ -19,9 +19,8 @@ public class Touch : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("Touch");
-            Destroy(gameObject);
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
             StartCoroutine(Home());
-            SceneManager.LoadScene(4);
         }
     }
 
@@ -29,6 +28,8 @@ public class Touch : MonoBehaviour
     {
         textShown = true;
         text.SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
+        Debug.Log("Wait finished");
+        SceneManager.LoadScene(4);
     }
 }
