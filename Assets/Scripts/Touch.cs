@@ -7,6 +7,8 @@ public class Touch : MonoBehaviour
 {
     public GameObject box;
     public GameObject text;
+    public AudioSource source;
+    public AudioClip forgetThis;
     //bool textShown = false;
 
     private void Start()
@@ -28,7 +30,8 @@ public class Touch : MonoBehaviour
     {
         //textShown = true;
         text.SetActive(true);
-        yield return new WaitForSeconds(2f);
+        source.PlayOneShot(forgetThis);
+        yield return new WaitForSeconds(4f);
         Debug.Log("Wait finished");
         SceneManager.LoadScene(4);
     }

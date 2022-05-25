@@ -7,6 +7,10 @@ public class Pickup : MonoBehaviour
 {
     public GameObject speed;
     public Collider home;
+    
+    public AudioSource source;
+    public AudioClip amazing;
+    public AudioClip great;
 
     //bool pickedup = false;
 
@@ -30,7 +34,7 @@ public class Pickup : MonoBehaviour
 
                 grain.enabled = true;
 
-
+                source.PlayOneShot(amazing);
             }
 
             if (type == 1)
@@ -45,6 +49,8 @@ public class Pickup : MonoBehaviour
 
                 //pickedup = true;
                 home.enabled = true;
+
+                source.PlayOneShot(great);
             }
         }
 

@@ -16,6 +16,11 @@ public class ScoreManagerWork : MonoBehaviour
 
     public GameObject drug;
 
+    public AudioSource source;
+    public AudioClip boring;
+    public AudioClip drugs;
+    //public AudioClip home;
+
 
     // Start is called before the first frame update
     void Start()
@@ -44,15 +49,17 @@ public class ScoreManagerWork : MonoBehaviour
     IEnumerator ShowText() {
         textShown = true;
         text.SetActive(true);
+        source.PlayOneShot(drugs);
         yield return new WaitForSeconds(3f);
         text.SetActive(false);
     }
 
     IEnumerator StartText()
     {
-        yield return new WaitForSeconds(3f);
+        //yield return new WaitForSeconds(3f);
         text2.SetActive(true);
-        yield return new WaitForSeconds(5f);
+        source.PlayOneShot(boring);
+        yield return new WaitForSeconds(4f);
         text2.SetActive(false);
     }
 
