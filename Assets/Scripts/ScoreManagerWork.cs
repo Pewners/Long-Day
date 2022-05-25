@@ -33,7 +33,7 @@ public class ScoreManagerWork : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((score > 3) && (textShown == false))
+        if ((score > 4) && (textShown == false))
         {
             //play voice clip
             StartCoroutine(ShowText());
@@ -50,7 +50,7 @@ public class ScoreManagerWork : MonoBehaviour
         textShown = true;
         text.SetActive(true);
         source.PlayOneShot(drugs);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(4f);
         text.SetActive(false);
     }
 

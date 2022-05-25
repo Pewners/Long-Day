@@ -33,14 +33,14 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((score > 3) && (textShown == false))
+        if ((score > 5) && (textShown == false))
         {
             //play voice clip
             StartCoroutine(ShowText());
             _ = Instantiate(drug, new Vector3((float)-10.01, 1, (float)-36.75), Quaternion.identity);
         }
 
-        if ((score > 6) && (textShown2 == false))
+        if ((score > 9) && (textShown2 == false))
         {
             StartCoroutine(WorkText());
         }
@@ -50,7 +50,7 @@ public class ScoreManager : MonoBehaviour
         textShown = true;
         text.SetActive(true);
         source.PlayOneShot(consider);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
         text.SetActive(false);
     }
 
@@ -58,7 +58,7 @@ public class ScoreManager : MonoBehaviour
     {
         text2.SetActive(true);
         source.PlayOneShot(mess);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(4f);
         text2.SetActive(false);
     }
 

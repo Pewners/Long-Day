@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5897328123239303442}
   - component: {fileID: 5816531202657362774}
   - component: {fileID: 8818123317732698113}
+  - component: {fileID: 8905475491229878229}
   m_Layer: 0
   m_Name: pasted__pCube26
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8905475491229878229
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123993527923580433}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.009999996, y: 0.012321374, z: 0.2184608}
+  m_Center: {x: 0.00000011910866, y: 0.0014637233, z: 0.12184}
 --- !u!1 &680855641064190593
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,7 +699,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5464876370365936185}
-  - component: {fileID: 8238531277738595911}
   m_Layer: 0
   m_Name: Office Wall 1
   m_TagString: Untagged
@@ -714,20 +727,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!64 &8238531277738595911
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4655865178785982595}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &5952345206712400887
 GameObject:
   m_ObjectHideFlags: 0
