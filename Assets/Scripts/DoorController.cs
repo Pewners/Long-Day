@@ -28,7 +28,7 @@ public class DoorController : MonoBehaviour
     public GameObject instructions;
     //Animator anim;
     bool inTrigger = false;
-    bool doorOpen = false;
+    //bool doorOpen = false;
 
     void Start()
     {
@@ -44,9 +44,9 @@ public class DoorController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("e pressed");
-                SceneManager.LoadScene("Work");
+                SceneManager.LoadScene(3);
 
-                doorOpen = !doorOpen;
+                //doorOpen = !doorOpen;
             }
 
         }

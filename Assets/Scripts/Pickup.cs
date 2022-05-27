@@ -12,6 +12,8 @@ public class Pickup : MonoBehaviour
     public AudioClip amazing;
     public AudioClip great;
 
+    
+
     //bool pickedup = false;
 
     private void Start()
